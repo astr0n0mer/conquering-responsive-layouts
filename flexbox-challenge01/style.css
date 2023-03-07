@@ -1,0 +1,84 @@
+:root {
+  --background-color-primary: #23424a;
+  --background-color-secondary: #136c72;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* hero style rules */
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 60%;
+  }
+}
+.hero__title {
+  font-size: 3rem;
+}
+.hero__info {
+  font-size: 1.3rem;
+  padding-bottom: 2em;
+}
+.cta-button {
+  background-color: #38cfd9;
+  color: #23424a;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  display: inline-block;
+  padding: 1em 3em;
+  border-radius: 2em;
+}
+.cta-button:hover {
+  text-decoration: underline;
+}
+
+/* card style rules */
+.card__title {
+  font-size: 2rem;
+}
+section .card__title {
+  color: #87629a;
+}
+.card__info {
+  font-size: 1.05rem;
+}
+.card__title,
+.card__info {
+  text-align: center;
+}
+
+/* helper classes */
+.container {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.display-flex {
+  display: flex;
+  gap: 1.5em;
+}
+.padding-tb-5 {
+  padding: 5em 0;
+}
+.padding-tb-3 {
+  padding: 3em 0;
+}
+.color-white {
+  color: white;
+}
+.background-color-primary {
+  background-color: var(--background-color-primary);
+}
+.background-color-secondary {
+  background-color: var(--background-color-secondary);
+}

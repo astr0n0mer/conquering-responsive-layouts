@@ -1,0 +1,121 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* helper classes */
+[class$="__title"] {
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+}
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+
+/* specific rule classes */
+.main {
+  text-align: center;
+  height: max(100vh, 658px);
+  background-color: #f3eed9;
+}
+
+.main > .d-flex {
+  flex-direction: column-reverse;
+  align-self: center;
+}
+@media only screen and (min-width: 1024px) {
+  .main > .d-flex {
+    width: 40%;
+  }
+}
+
+.main__title {
+  font-size: 3rem;
+}
+
+.main__subtitle {
+  font-size: 0.8rem;
+  letter-spacing: 0.75em;
+}
+
+.main__title,
+.section__title {
+  color: #824936;
+  text-align: center;
+}
+
+.section {
+  flex-direction: column;
+  margin: 5em auto;
+}
+
+.section__title {
+  font-size: 2rem;
+}
+
+.section > .d-flex,
+.gallery > .d-flex {
+  flex-direction: column;
+  gap: 1.2em;
+}
+@media only screen and (min-width: 768px) {
+  .section > .d-flex,
+  .gallery > .d-flex {
+    flex-direction: row;
+    gap: 3.5em;
+    justify-content: space-between;
+  }
+
+  .section__info > p,
+  .gallery > .d-flex > * {
+    width: 45%;
+  }
+
+  .gallery--brown > .d-flex {
+    flex-direction: row-reverse;
+  }
+}
+
+.section__info,
+.gallery__text__info {
+  font-size: 1.1rem;
+  line-height: 1.3em;
+}
+
+.gallery {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  color: white;
+}
+
+.gallery--black {
+  background-color: #222c2a;
+}
+
+.gallery--brown {
+  background-color: #824936;
+}
+
+.gallery__text__title {
+  font-size: 2rem;
+}
